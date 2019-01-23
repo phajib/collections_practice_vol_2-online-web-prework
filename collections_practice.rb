@@ -42,7 +42,7 @@ end
 
 def organize_schools(schools)
   new_schools = {}
-  schools.collect do |school, location|
+  schools.each do |school, location|
     location.map do |k, v|
       unless new_schools.key?(v)
         new_schools[v] = [school]
@@ -51,6 +51,7 @@ def organize_schools(schools)
       end
     end
   end
+  new_schools
 end
 =begin
   by_location = {}
