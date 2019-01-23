@@ -35,7 +35,9 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-
+  if array[1].values[1] == "cool"
+    [array[1]]
+  end
 end
 
 def organize_schools(array)
