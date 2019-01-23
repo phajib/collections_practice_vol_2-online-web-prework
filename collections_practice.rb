@@ -53,17 +53,3 @@ def organize_schools(schools)
   end
   new_schools
 end
-=begin
-  by_location = {}
-    array.each do |school, location_hash|
-      location_hash.each do |symbol, location|
-        if by_location[location] == nil
-          by_location[location] = [school]
-        else
-          by_location[location] << school
-        end
-      end
-    end
-    by_location
-end
-=end
