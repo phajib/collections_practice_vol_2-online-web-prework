@@ -40,7 +40,7 @@ def find_cool(array)
   end
 end
 
-def organize_schools(array)
+def organize_schools(schools)
   schools.map do |school, location|
   location.map do |k, v|
     unless new_schools.key?(v)
@@ -49,7 +49,7 @@ def organize_schools(array)
       new_schools[v] << school
     end
   end
-end
+  end
 end
 =begin
   by_location = {}
