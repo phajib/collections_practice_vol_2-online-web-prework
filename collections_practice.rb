@@ -50,6 +50,7 @@ def organize_schools(schools)
     end
   end
 end
+end
 =begin
   by_location = {}
     array.each do |school, location_hash|
